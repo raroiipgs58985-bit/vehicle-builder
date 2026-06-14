@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Конструктор техники</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div>
+        <h1>Конструктор техники</h1>
+        <p>Платформы • Узлы • Модули</p>
+      </div>
+      <button id="resetBtn">Сброс</button>
+    </header>
+
+    <section class="panel">
+      <label>Платформа</label>
+      <select id="platformSelect"></select>
+    </section>
+
+    <section class="vehicle-card">
+      <h2 id="vehicleName">—</h2>
+      <p id="vehicleDesc">Выбери платформу</p>
+
+      <div class="stats-grid" id="statsGrid"></div>
+    </section>
+
+    <section>
+      <h2>Слоты</h2>
+      <div class="slots" id="slots"></div>
+    </section>
+
+    <section>
+      <h2>Модули</h2>
+      <input id="searchInput" placeholder="Поиск модуля..." />
+      <div class="module-grid" id="moduleGrid"></div>
+    </section>
+
+    <section class="result-card">
+      <h2>Итоговая карточка</h2>
+      <pre id="resultText"></pre>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
